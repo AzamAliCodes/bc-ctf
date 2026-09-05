@@ -34,9 +34,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="no-scrollbar overflow-hidden">
+    <html lang="en" className="no-scrollbar overflow-hidden" suppressHydrationWarning>
       <body
         className={`${pixelFont.variable} ${monoFont.variable} ${techFont.variable} antialiased no-scrollbar overflow-hidden w-full h-screen`}
+        suppressHydrationWarning
       >
         <BackgroundEffects />
         {children}
